@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Cellular Handoff Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cellular Network Handoff Simulation</h1>
+  </header>
+  <main>
+    <div id="simulation">
+      <canvas id="networkCanvas"></canvas>
+    </div>
+    <div id="controls">
+      <button id="startSimulation">Start Simulation</button>
+      <button id="resetSimulation">Reset</button>
+      <button id="addCell">Add Cell</button>
+      <button id="removeCell">Remove Cell</button>
+    </div>
+    <div id="sliders">
+      <label for="speedControl">User Speed:</label>
+      <input type="range" id="speedControl" min="1" max="10" value="2">
+    </div>
+    <div id="log">
+      <h2>Handoff Log</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>User Position</th>
+            <th>Connected Cell</th>
+          </tr>
+        </thead>
+        <tbody id="logBody"></tbody>
+      </table>
+    </div>
+  </main>
+  <footer>
+    <p>Developed for enhanced cellular network simulation.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
